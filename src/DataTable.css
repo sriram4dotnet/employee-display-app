@@ -1,0 +1,21 @@
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0; /* Adjust the margin as needed */
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add a border to cells */
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2; /* Add background color to header cells */
+    font-weight: bold;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate background color for even rows */
+  }
+  

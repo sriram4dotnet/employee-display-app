@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import DataTable from './DataTable';
 
 function App() {
   const [employee, setEmployee] = useState(null);
@@ -42,14 +43,7 @@ function App() {
             </ul>
             <h2>Projects</h2>
             <ul>
-              {employee.projects.map((project, index) => (
-                <li key={index}>
-                  <p>Name: {project.name}</p>
-                  <p>Role: {project.role}</p>
-                  <p>Start Date: {project.startDate}</p>
-                  <p>End Date: {project.endDate ? project.endDate : "Ongoing"}</p>
-                </li>
-              ))}
+            <DataTable projects={ employee.projects}/>
             </ul>
           </div>
         </div>
